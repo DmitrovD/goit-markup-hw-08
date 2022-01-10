@@ -1,0 +1,38 @@
+.clients {
+    margin-bottom: 50px;
+  
+    color: var(--prime-tex-color);
+ @include fonts(700, 36px, 1.16, 0.03em);
+    text-align: center;
+  }
+  
+  .clients__list {
+    display: flex;
+  }
+  
+  .clients__item:not(:first-child) {
+    margin-left: 30px;
+  }
+  
+  .clients__link {
+    @extend %stance-list;
+    
+    width: 170px;
+    height: 92px;
+    
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+  
+    transition: color 250ms var(--cubic-conversion), border-color 250ms var(--cubic-conversion);
+    &:hover,
+    &:focus {
+      color: var(--accent-blue-color);
+    border-color: var(--accent-blue-color);
+    }
+  }
+  
+  .clients__icon {
+    fill: currentColor;
+  }
+  

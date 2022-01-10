@@ -1,0 +1,41 @@
+/* No CSS *//*# sourceMappingURL=main.css.map */
+   
+@import './utils/vars';
+
+/* ----------------UTILITIES---------------- */
+@import './utils/reset.scss';
+@import './components/container';
+@import './components/section';
+@import './utils/hidden';
+@import './utils/placeholder';
+@import './utils/mixins';
+
+/* ----------------NAV---------------- */
+@import './components/header';
+
+/* ----------------FOOTER---------------- */
+@import './components/footer';
+
+/* ----------------"Студия" page CSS---------------- */
+/* ----------------HERO SECTION---------------- */
+@import './components/hero';
+@import './components/hero-modal';
+
+/* ----------------ADVANTAGES---------------- */
+@import './components/stem';
+
+/* ----------------WHAT CAN WE MAKE---------------- */
+@import './components/we-doing';
+
+/* ----------------TEAM---------------- */
+@import './components/team';
+
+/* ----------------CLIENTS---------------- */
+@import './components/clients';
+
+/* ----------------"Портфолио" page CSS---------------- */
+/* ----------------FILTER NAVIGATION---------------- */
+@import './components/filter';
+
+/* ----------------PROJECTS---------------- */
+@import './components/projects';
