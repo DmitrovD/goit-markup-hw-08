@@ -1,31 +1,62 @@
 .hero {
-    text-align: center;
-      padding: 200px 0;
-      max-width: 1600px;
-      margin-left: auto;
-      margin-right: auto;
-    
-      background-color: #2f303a66;
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/hero.jpeg);
-    
-      background-size: cover;
-      background-position: center;
+  text-align: center;
+
+  padding: 118px 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_img_mob_x1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_img_mob_x2.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_img_tab_x1.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero_img_tab_x2.jpg);
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/.hero.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero_img_x2.jpg);
+    }
+  }
+}
+
     
     .hero__title {
-      text-transform: uppercase;
-      color: var(--white-text-color);
-
-      @include fonts(900, 44px, 1.36, 0.06em);
-
       margin-bottom: 30px;
-      margin-left: auto;
-        margin-right: auto;
-        width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--white-text-color);
+  text-transform: uppercase;
+  @include fonts(900, 26px, 1.6, 0.06em);
+
+  @media screen and (max-width: 1199px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    @include fonts(900, 44px, 1.36, 0.06em);
+  }
     }
 
     
