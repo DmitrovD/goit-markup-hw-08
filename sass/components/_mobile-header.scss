@@ -26,7 +26,7 @@
   margin-right: 15px;
 
   cursor: pointer;
-  color: var(--accent--blue-color);
+  color: var(--accent-blue-color);
   transition: fill 250ms var(--cubic-conversion);
 
   &:hover,
@@ -40,7 +40,7 @@
   position: fixed;
 
   z-index: 1;
-  background-color: white;
+  background-color: var(--white-prime-bgc);
 
   top: 0;
   width: 100vw;
@@ -69,16 +69,16 @@
   color: var(--primary-text-color);
   @include fonts(500, 40px, 1.17, 0.02em);
 
-  transition: color 250ms var(--cubic-conversio);
+  transition: color 250ms var(--cubic-conversion);
 
   &:hover,
   &:focus {
-    color: var(--accent--blue-color);
+    color: var(--accent-blue-color);
   }
 }
 
 .mobile-menu-nav--current {
-  color: var(--accent--blue-color);
+  color: var(--accent-blue-color);
 }
 
 .mobile-menu-contacts {
@@ -92,12 +92,12 @@
 }
 
 .mobile-menu-mail__link {
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
   @include fonts(500, 24px, 1.16, 0.02em);
 }
 
 .mobile-menu-tel__link {
-  color: var(--accent--blue-color);
+  color: var(--accent-blue-color);
   @include fonts(500, 34px, 1.17, 0.02em);
 }
 
@@ -119,5 +119,5 @@
 
 .mobile-menu-socials__link {
   @include fonts(500, 18px, 1.2, 0.02em);
-  color: var(--accent--blue-color);
+  color: var(--accent-blue-color);
 }
