@@ -1329,7 +1329,7 @@ a {
 }
 
 .works__link:hover, .works__link:focus {
-  box-shadow: var(--hover-porfolio-link);
+  box-shadow: var(--projects-bg-hover);
   transform: translateY(0);
 }
 
@@ -1343,7 +1343,7 @@ a {
 }
 
 .works-thumb__text {
-  color: var(--secondary-color);
+  color: var(--secondary);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

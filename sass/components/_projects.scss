@@ -32,7 +32,7 @@
       
       &:hover,
       &:focus {
-        box-shadow: var(--hover-porfolio-link);
+        box-shadow: var(--projects-bg-hover);
         transform: translateY(0);
       }
     }
@@ -47,7 +47,7 @@
   }
   
   .works-thumb__text {
-    color: var(--secondary-color);
+    color: var(--secondary-text-color)
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
