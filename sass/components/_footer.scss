@@ -12,16 +12,36 @@
   .footer-logo--white-half {
     color: white;
   }
+
+  .logo--bottom-position {
+    display: flex;
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
+  }
   
   .footer__list {
+      @media screen and (min-width: 1199px) {
     display: inline-block;
+  }
   }
   
   .footer__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
+}
   
   .footer__address {
+    display: flex;
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    text-align: center;
+  }
+  }
+
+  .footer-address--mt {
     margin-top: 20px;
   }
   
@@ -38,12 +58,22 @@
   }
   
   .footer__wrap {
+     @media screen and (min-width: 1200px) {
     align-items: baseline;
     display: flex;
   }
+  }
   
   .footer__socials {
+     @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  }
+
+  .footer__socials--ml {
+    @media screen and (min-width: 1200px) {
     margin-left: 70px;
+  }
   }
   
   .footer__socials-title {
@@ -53,7 +83,11 @@
 
     text-transform: uppercase;
     color: var(--white-text-color);
+
+      @media screen and (max-width: 1199px) {
+    text-align: center;
   }
+}
   
   .footer__socials-list {
     display: flex;
@@ -92,44 +126,78 @@
   }
   
   
+
+
+
+
   .footer__sign {
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
   }
   
   .footer__sign-title {
+      display: block;
       margin-bottom: 20px;
   
       @include fonts(700, 14px, 1.14, 0.03em);
 
       text-transform: uppercase;
       color: var(--white-text-color);
+
+      @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   }
   
-  .footer__sign-wrap {
-      display: flex;
+  .footer__sign-form {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   }
   
   .footer__sign-input {
-      width: 358px;
-      height: 50px;
-  
-      padding: 15px 16px;
-  
-      background-color: inherit;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-      outline: none;
-  
-      color: var(--white-text-color)
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+
+  color: var(--white-text-color);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: 358px;
+  }
   }
   
   .footer__sign-button {
     @extend %stance-list;
   
-      margin-left: 12px;
-  
-      min-width: 200px;
-      height: 50px;
+      margin-left: auto;
+  margin-right: auto;
+
+  min-width: 200px;
+  height: 50px;
   
       background-color: var(--accent-blue-color);
       color: var(--white-text-color);
@@ -145,6 +213,10 @@
 	    &:focus {
       background-color: var(--hover-part-color);
 	}
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
   }
   
   .footer__sign-icon {
@@ -152,3 +224,11 @@
       fill: #ffffff;
   }
   
+
+.tablet-view {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}

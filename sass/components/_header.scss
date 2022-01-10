@@ -1,10 +1,14 @@
-
 .logo-site {
-    margin-right: 93px;
-  
     color: var(--accent-blue-color);
     font-family: Raleway, sans-serif;
     @include fonts(700, 26px, 1.19, 0.03em);
+
+      @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
   }
   
   .logo-second-part {
@@ -19,7 +23,12 @@
 
   .header__container {
     display: flex;
-    align-items: center;
+  align-items: center;
+  height: 60px;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
   }
   
   .header__nav {
@@ -29,6 +38,11 @@
   
   .site-nav {
     display: flex;
+    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+     display: none;
+    }
   }
   
   .site-nav__item:not(:last-child) {
@@ -89,26 +103,32 @@
 	}
 }
 
-  .site-nav__link.current,{
+  .site-nav__link.current   {
     color: var(--accent-blue-color);
   }
   
   .contact {
+     margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
+  }
   }
   
   .contact__item:not(:first-child) {
+  @media screen and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-left: 50px;
   }
+  }
   
-  .contact__link {
-    display: flex;
-    align-items: center;
-  
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
+  .contact__link {  
     color: var(--secondary-color);
     @include fonts(500, 14px, 1.14, 0.02em);
   
@@ -117,6 +137,13 @@
   &:hover,
 	&:focus {
     color: var(--accent-blue-color);
+  }
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
   }
 }
   

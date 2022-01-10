@@ -1,3 +1,9 @@
+.no-hide-desctop {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 
 .doing__list {
     display: flex;

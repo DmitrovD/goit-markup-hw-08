@@ -1,13 +1,30 @@
+.filter--bm {
+    margin-bottom: 40px;
 
-.filter-project__list {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
-  
-  .filter-project__item:not(:first-child) {
-    margin-left: 8px;
+}
+
+.filter-project__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+    @media screen and (min-width: 768px) {
+    justify-content: center;
+    } 
   }
+  
+  .filter-project__item {
+      margin-top: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
   
   .filter-project__btt {
     padding: 6px 22px;
