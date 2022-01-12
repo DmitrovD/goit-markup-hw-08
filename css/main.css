@@ -791,6 +791,13 @@ a {
   transform: scale(1) translate(-50%, -50%);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
+}
+
 .modal__title {
   display: block;
   margin-bottom: 12px;

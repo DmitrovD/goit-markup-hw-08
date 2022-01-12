@@ -25,6 +25,11 @@
 	border-radius: 4px;
 
 	transform: scale(1) translate(-50%, -50%);
+	 
+	@media screen and (min-width: 1200px) {
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {
