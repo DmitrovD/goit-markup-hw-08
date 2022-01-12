@@ -131,6 +131,9 @@
   .contact__link {  
     color: var(--secondary-color);
     @include fonts(500, 14px, 1.14, 0.02em);
+
+    display: flex;
+    align-items: center;
   
     transition: color 250ms var(--cubic-conversion);
   
